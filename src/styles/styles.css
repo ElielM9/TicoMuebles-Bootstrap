@@ -1,0 +1,65 @@
+:root {
+  --separacion: 4rem;
+  /* COLORES */
+  --bs-blue: rgb(93, 109, 191);
+  /* FUENTES  */
+  --fuenteTitulos: "Playfair Display", serif;
+  --fuenteTextos: "Raleway", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* GLOBALES */
+h1,
+h2,
+h3 {
+  font-family: var(--fuenteTitulos);
+  margin: calc(var(--separacion) / 2) 0;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.text-primary{
+  color: var(--bs-blue)!important;
+}
