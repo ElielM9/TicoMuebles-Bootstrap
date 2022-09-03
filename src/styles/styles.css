@@ -1,7 +1,8 @@
 :root {
   --separacion: 4rem;
   /* COLORES */
-  --bs-blue: rgb(93, 109, 191);
+  --bs-blue: #0669a2;
+  --green: #8cbc00;
   /* FUENTES  */
   --fuenteTitulos: "Playfair Display", serif;
   --fuenteTextos: "Raleway", sans-serif;
@@ -20,6 +21,8 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: var(--fuenteTextos);
+  line-height: 1.5;
 }
 
 /* GLOBALES */
@@ -41,11 +44,23 @@ h1 {
 }
 
 h2 {
-  font-size: 3.6rem;
+  font-size: 3.2rem;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 3.8rem;
+  }
 }
 
 h3 {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 2.8rem;
+  }
 }
 
 p {
@@ -60,6 +75,63 @@ ul {
   list-style: none;
 }
 
-.text-primary{
-  color: var(--bs-blue)!important;
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.text-primary {
+  color: var(--bs-blue) !important;
+}
+
+.bg-primary {
+  background-color: var(--bs-blue) !important;
+}
+
+.btn-success {
+  background-color: var(--green) !important;
+}
+
+.hero {
+  height: 25rem;
+  background-image: url(../assets/img/principal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 55rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .producto img {
+    height: 40rem;
+    object-fit: cover;
+  }
+}
+
+.categoria img {
+  transition-property: transform;
+  transition-duration: 0.3s;
+}
+
+@media (hover: hover) {
+  .categoria img:hover {
+    transform: scale(1.1);
+  }
+}
+
+.galeria li {
+  margin-bottom: 1.5rem;
+}
+
+
+.form-control{
+  padding: 1.5rem;
+  font-size: 1.6rem;
 }

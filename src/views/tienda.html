@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TicoMuebles | Inicio</title>
+    <title>TicoMuebles | Tienda</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -51,10 +51,98 @@
         </div>
       </div>
     </div>
-    <div class="hero"></div>
     <main class="container-xl py-5">
       <h2 class="text-center my-5">Nuestros productos</h2>
-      <div class="row pt-5 mb-4">
+      <div class="row g-0 pt-5 mb-4">
+        <div class="col-lg-8 producto">
+          <picture>
+            <source srcset="assets/img/producto1.avif" type="image/avif" />
+            <source srcset="assets/img/producto1.webp" type="image/webp" />
+            <img
+              class="img-fluid"
+              loading="lazy"
+              width="500"
+              height="300"
+              src="./assets/img/producto1.jpg"
+              alt="Imagen-Producto"
+            />
+          </picture>
+        </div>
+        <div
+          class="col-lg-4 bg-primary text-start p-5 text-white d-flex flex-column justify-content-center"
+        >
+          <h3>Producto 1</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse,
+            sapiente possimus aliquid tempore consectetur voluptate!
+          </p>
+          <p class="fs-1 fw-bold">1,399</p>
+          <a class="btn btn-success fs-3 fw-bold text-uppercase py-3" href="#"
+            >Agregar al carrito</a
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <picture>
+              <source srcset="assets/img/producto2.avif" type="image/avif" />
+              <source srcset="assets/img/producto2.webp" type="image/webp" />
+              <img
+                class="img-fluid"
+                loading="lazy"
+                width="500"
+                height="300"
+                src="./assets/img/producto2.jpg"
+                alt="Imagen-Producto"
+              />
+            </picture>
+            <div class="card-body text-start bg-primary text-white p-5">
+              <h3>Producto 2</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse,
+                sapiente possimus aliquid tempore consectetur voluptate!
+              </p>
+              <p class="fs-1 fw-bold">6,399</p>
+              <a
+                class="d-block btn btn-success fs-3 fw-bold text-uppercase py-3"
+                href="#"
+                >Agregar al carrito</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <picture>
+              <source srcset="assets/img/producto3.avif" type="image/avif" />
+              <source srcset="assets/img/producto3.webp" type="image/webp" />
+              <img
+                class="img-fluid"
+                loading="lazy"
+                width="500"
+                height="300"
+                src="./assets/img/producto3.jpg"
+                alt="Imagen-Producto"
+              />
+            </picture>
+            <div class="card-body text-start bg-primary text-white p-5">
+              <h3>Producto 3</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse,
+                sapiente possimus aliquid tempore consectetur voluptate!
+              </p>
+              <p class="fs-1 fw-bold">2,399</p>
+              <a
+                class="d-block btn btn-success fs-3 fw-bold text-uppercase py-3"
+                href="#"
+                >Agregar al carrito</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-md-4 mb-4">
           <div class="card">
             <picture>
@@ -143,82 +231,7 @@
           </div>
         </div>
       </div>
-      <div class="d-grid d-md-flex">
-        <a
-        class="btn btn-success btn-lg fw-bold px-5 py-3 fs-3 text-uppercase"
-          href="tienda.html"
-          >Ver todo</a
-        >
-      </div>
     </main>
-    <section class="container-xl">
-      <h2 class="text-center py-5">Categorías</h2>
-      <div class="row mt-5">
-        <div class="col-md-4 categoria">
-          <div class="overflow-hidden">
-            <picture>
-              <source srcset="./assets/img/categoria1.avif" type="image/avif" />
-              <source srcset="./assets/img/categoria1.webp" type="image/webp" />
-              <img
-                class="img-fluid"
-                loading="lazy"
-                width="500"
-                height="300"
-                src="./assets/img/categoria1.jpg"
-                alt=""
-              />
-            </picture>
-          </div>
-          <a
-            class="text-dark fs-2 text-decoration-none text-center d-block py-3"
-            href="#"
-            >Hogar</a
-          >
-        </div>
-        <div class="col-md-4 categoria">
-          <div class="overflow-hidden">
-            <picture>
-              <source srcset="./assets/img/categoria2.avif" type="image/avif" />
-              <source srcset="./assets/img/categoria2.webp" type="image/webp" />
-              <img
-                class="img-fluid"
-                loading="lazy"
-                width="500"
-                height="300"
-                src="./assets/img/categoria2.jpg"
-                alt=""
-              />
-            </picture>
-          </div>
-          <a
-            class="text-dark fs-2 text-decoration-none text-center d-block py-3"
-            href="#"
-            >Oficina</a
-          >
-        </div>
-        <div class="col-md-4 categoria">
-          <div class="overflow-hidden">
-            <picture>
-              <source srcset="./assets/img/categoria3.avif" type="image/avif" />
-              <source srcset="./assets/img/categoria3.webp" type="image/webp" />
-              <img
-                class="img-fluid"
-                loading="lazy"
-                width="500"
-                height="300"
-                src="./assets/img/categoria3.jpg"
-                alt=""
-              />
-            </picture>
-          </div>
-          <a
-            class="text-dark fs-2 text-decoration-none text-center d-block py-3"
-            href="#"
-            >Cocina</a
-          >
-        </div>
-      </div>
-    </section>
     <footer class="pt-3 border-top">
       <div class="container-xl mt-3">
         <div class="row">
